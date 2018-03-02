@@ -687,7 +687,7 @@ NAN_MODULE_INIT(init) {
     Nan::Set(target, Nan::New("fresh").ToLocalChecked(), Nan::GetFunction(Nan::New<FunctionTemplate>(fresh)).ToLocalChecked());
     Nan::Set(target, Nan::New("neoscrypt").ToLocalChecked(), Nan::GetFunction(Nan::New<FunctionTemplate>(neoscrypt_hash)).ToLocalChecked());
     Nan::Set(target, Nan::New("yescrypt").ToLocalChecked(), Nan::GetFunction(Nan::New<FunctionTemplate>(yescrypt)).ToLocalChecked());
-    Nan::Set(target, Nan::New("tribus").ToLocalChecked(), Nan::GetFunction(Nan::New<FunctionTemplate>(yescrypt)).ToLocalChecked());
+    Nan::Set(target, Nan::New("tribus").ToLocalChecked(), Nan::GetFunction(Nan::New<FunctionTemplate>(tribus)).ToLocalChecked());
 }
 
 NODE_MODULE(multihashing, init)
